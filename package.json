@@ -1,0 +1,43 @@
+{
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "format": "eslint src --fix && prettier --write src && stylelint **/*.{css,scss,sass}",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "prod": "tsc && vite build && vite preview"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "autoprefixer": "^10.4.14",
+    "css-declaration-sorter": "^6.4.0",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.39.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-standard": "^17.0.0",
+    "glob": "^10.0.0",
+    "postcss": "^8.4.21",
+    "postcss-sort-media-queries": "^4.3.0",
+    "prettier": "^2.8.8",
+    "sass": "^1.58.1",
+    "stylelint": "^15.6.0",
+    "stylelint-config-recommended": "^12.0.0",
+    "stylelint-config-recommended-scss": "^11.0.0",
+    "stylelint-scss": "^4.6.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0",
+    "vite-plugin-glsl": "^1.1.2",
+    "vite-plugin-handlebars": "^1.6.0",
+    "vite-plugin-imagemin": "^0.6.1"
+  },
+  "dependencies": {
+    "gsap": "^3.11.4",
+    "jquery": "^3.6.4",
+    "lil-gui": "^0.18.1",
+    "three": "^0.151.3"
+  }
+}
